@@ -30,17 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnNotifications = new System.Windows.Forms.Button();
             this.btnReporting = new System.Windows.Forms.Button();
             this.btnCustomer = new System.Windows.Forms.Button();
             this.btnOrders = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lbltitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -59,61 +60,10 @@
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 518);
+            this.panelMenu.Size = new System.Drawing.Size(293, 638);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.panelLogo.Controls.Add(this.label2);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(79)))), ((int)(((byte)(78)))));
-            this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(580, 80);
-            this.panelTitleBar.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(250, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "HOME";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label2.Location = new System.Drawing.Point(31, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 26);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "COFFEE HOT";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsAppCoffee.Properties.Resources.coffee__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(390, 140);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // btnSetting
             // 
@@ -123,10 +73,11 @@
             this.btnSetting.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSetting.Image = global::WindowsFormsAppCoffee.Properties.Resources.settings;
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 380);
+            this.btnSetting.Location = new System.Drawing.Point(0, 468);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(220, 60);
+            this.btnSetting.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnSetting.Size = new System.Drawing.Size(293, 74);
             this.btnSetting.TabIndex = 6;
             this.btnSetting.Text = "   Setting";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,10 +92,11 @@
             this.btnNotifications.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnNotifications.Image = global::WindowsFormsAppCoffee.Properties.Resources.notification;
             this.btnNotifications.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotifications.Location = new System.Drawing.Point(0, 320);
+            this.btnNotifications.Location = new System.Drawing.Point(0, 394);
+            this.btnNotifications.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNotifications.Name = "btnNotifications";
-            this.btnNotifications.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnNotifications.Size = new System.Drawing.Size(220, 60);
+            this.btnNotifications.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnNotifications.Size = new System.Drawing.Size(293, 74);
             this.btnNotifications.TabIndex = 5;
             this.btnNotifications.Text = "   Notifications";
             this.btnNotifications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,10 +112,11 @@
             this.btnReporting.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnReporting.Image = global::WindowsFormsAppCoffee.Properties.Resources.statistics;
             this.btnReporting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReporting.Location = new System.Drawing.Point(0, 260);
+            this.btnReporting.Location = new System.Drawing.Point(0, 320);
+            this.btnReporting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReporting.Name = "btnReporting";
-            this.btnReporting.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnReporting.Size = new System.Drawing.Size(220, 60);
+            this.btnReporting.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnReporting.Size = new System.Drawing.Size(293, 74);
             this.btnReporting.TabIndex = 4;
             this.btnReporting.Text = "   Reporting";
             this.btnReporting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,10 +131,11 @@
             this.btnCustomer.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnCustomer.Image = global::WindowsFormsAppCoffee.Properties.Resources.value;
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCustomer.Location = new System.Drawing.Point(0, 200);
+            this.btnCustomer.Location = new System.Drawing.Point(0, 246);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnCustomer.Size = new System.Drawing.Size(220, 60);
+            this.btnCustomer.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnCustomer.Size = new System.Drawing.Size(293, 74);
             this.btnCustomer.TabIndex = 3;
             this.btnCustomer.Text = "   Customer";
             this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,10 +150,11 @@
             this.btnOrders.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnOrders.Image = global::WindowsFormsAppCoffee.Properties.Resources.clipboard;
             this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(0, 140);
+            this.btnOrders.Location = new System.Drawing.Point(0, 172);
+            this.btnOrders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnOrders.Size = new System.Drawing.Size(220, 60);
+            this.btnOrders.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnOrders.Size = new System.Drawing.Size(293, 74);
             this.btnOrders.TabIndex = 2;
             this.btnOrders.Text = "   Orders";
             this.btnOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,26 +169,98 @@
             this.btnProducts.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnProducts.Image = global::WindowsFormsAppCoffee.Properties.Resources.shopping_cart__2_;
             this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(0, 80);
+            this.btnProducts.Location = new System.Drawing.Point(0, 98);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnProducts.Size = new System.Drawing.Size(220, 60);
+            this.btnProducts.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.btnProducts.Size = new System.Drawing.Size(293, 74);
             this.btnProducts.TabIndex = 1;
             this.btnProducts.Text = "   Products";
             this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.panelLogo.Controls.Add(this.label2);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(293, 98);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label2.Location = new System.Drawing.Point(41, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 31);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "COFFEE HOT";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(79)))), ((int)(((byte)(78)))));
+            this.panelTitleBar.Controls.Add(this.lbltitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(293, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(774, 98);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // lbltitle
+            // 
+            this.lbltitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbltitle.AutoSize = true;
+            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lbltitle.Location = new System.Drawing.Point(334, 34);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(99, 31);
+            this.lbltitle.TabIndex = 0;
+            this.lbltitle.Text = "HOME";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::WindowsFormsAppCoffee.Properties.Resources.coffee__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(520, 172);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(293, 98);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(774, 540);
+            this.panelDesktop.TabIndex = 3;
             // 
             // FormMainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(800, 518);
+            this.ClientSize = new System.Drawing.Size(1067, 638);
+            this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMainMenu";
             this.Text = "Main";
             this.panelMenu.ResumeLayout(false);
@@ -258,9 +285,10 @@
         private System.Windows.Forms.Button btnCustomer;
         private System.Windows.Forms.Button btnOrders;
         private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelDesktop;
     }
 }
 
