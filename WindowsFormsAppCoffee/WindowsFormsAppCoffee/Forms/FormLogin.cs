@@ -39,16 +39,36 @@ namespace WindowsFormsAppCoffee.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int i;
             if (txtName.Text == "AOI-SK" && txtPass.Text == "200212")
             {
+                MessageBox.Show("Logged in successfully!");
                 Forms.FormProducts formProducts = new Forms.FormProducts();
                 formProducts.Show();
                 this.Hide();
             }
-            else
+            else if (txtName.Text != "AOI-SK" || txtPass.Text != "200212")
             {
-                MessageBox.Show("UserName or Password wrong, please try again", "Login");
+                for (i = 0; i < 3; i++)
+                {
+                    if (i <= 2)
+                    {
+                        MessageBox.Show("Login failure");
+                        txtName.Clear();
+                        txtPass.Clear();
+                        txtName.Focus();
+                        break;
+                    }
+                    else if (i == 3)
+                    {
+                        MessageBox.Show("Login failure");
+                        this.Close();
+                        break;
+                    }
+                }
             }
+            
         }
+        
     }
 }
