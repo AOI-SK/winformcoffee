@@ -12,6 +12,7 @@ namespace WindowsFormsAppCoffee.Forms
 {
     public partial class FormLogin : Form
     {
+        int i;
         public FormLogin()
         {
             InitializeComponent();
@@ -39,35 +40,38 @@ namespace WindowsFormsAppCoffee.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int i;
-            if (txtName.Text == "AOI-SK" && txtPass.Text == "200212")
+            
+            if(i <= 3)
             {
-                MessageBox.Show("Logged in successfully!");
-                Forms.FormProducts formProducts = new Forms.FormProducts();
-                formProducts.Show();
-                this.Hide();
-            }
-            else if (txtName.Text != "AOI-SK" || txtPass.Text != "200212")
-            {
-                for (i = 0; i < 3; i++)
+                if(txtName.Text != "AOI-SK" && txtPass.Text != "200212")
                 {
-                    if (i <= 2)
-                    {
-                        MessageBox.Show("Login failure");
-                        txtName.Clear();
-                        txtPass.Clear();
-                        txtName.Focus();
-                        break;
-                    }
-                    else if (i == 3)
-                    {
-                        MessageBox.Show("Login failure");
-                        this.Close();
-                        break;
-                    }
+                    MessageBox.Show("login failed", "error");
+                    txtName.Clear();
+                    txtPass.Clear();
+                    txtName.Focus();
+                }
+                else if (txtName.Text == "AOI-SK" && txtPass.Text == "200212")
+                {
+                    MessageBox.Show("Logged in successfully!");
+                    Forms.FormProducts formProducts = new Forms.FormProducts();
+                    formProducts.Show();
+                    this.Hide();
+
+                }
+                else
+                {
+                    MessageBox.Show("login failed", "error");
+                    txtName.Clear();
+                    txtPass.Clear();
+                    txtName.Focus();
                 }
             }
-            
+            else if(i == 4)
+            {
+                MessageBox.Show("you try it 3 times already", "error");
+                this.Close();
+            }
+            i++;         
         }
         
     }
